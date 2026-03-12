@@ -58,11 +58,13 @@ A few assumptions in the current version are specific to the U.S. Figure Skating
   - Skating Skills
 - it is intended as a practical analysis utility, not a production scraper
 
-If the site structure changes, the parsing logic may need to be updated.
+If the judging criteria (ie, more program components are introduced) or the site structure changes, the parsing logic may need to be updated.
 
-## Requirements
+## Dependencies
 
-Install dependencies with:
-
-```bash
-pip install -r requirements.txt
+This script uses:
+- pandas
+- numpy
+- requests
+- beautifulsoup4
+- lxml (as the parser used by BeautifulSoup)

@@ -17,13 +17,13 @@ the script:
 1. loops through each event in the competition
 2. checks whether the judge participated in that event
 3. pulls the judge detail scoring page
-4. extracts skater-level GOE and component marks
+4. extracts each skater's GOE and component marks
 5. calculates how often the judge’s marks were:
    - within the panel range
    - within the panel range ±1 for GOEs
    - within the panel range ±0.25 for components
 6. exports a CSV file with:
-   - skater-level summaries
+   - skater-by-skater summaries
    - event totals
    - one block per event
 
@@ -43,7 +43,7 @@ The script writes:
 
 The output includes:
 - an event header row
-- skater-level rows
+- row per skater
 - an event summary row
 - a blank spacer row between events
 
